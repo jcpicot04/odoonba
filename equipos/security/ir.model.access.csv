@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_equipos_equipos,equipos.equipos,model_equipos_equipos,base.group_user,1,1,1,1
+access_equipos_liga,equipos.liga,model_equipos_liga,base.group_user,1,1,1,1
+access_equipos_temporada,equipos.temporada,model_equipos_temporada,base.group_user,1,1,1,1
+access_equipos_jugadores,equipos.jugadores,model_equipos_jugadores,base.group_user,1,1,1,1

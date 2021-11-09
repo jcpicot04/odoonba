@@ -1,0 +1,142 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="equipos.list">
+      <field name="name">Equipos</field>
+      <field name="model">equipos.equipos</field>
+      <field name="arch" type="xml">
+        <tree decoration-danger="budget &lt;=70000" decoration-warning="budget &lt;=75000" decoration-success="budget &gt;=68000">
+          <field name="name"/>
+          <field name="conference"/>
+          <field name="budget" sum="Total"/>
+          <field name="city"/>
+          <field name="logo"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.form">
+      <field name="name">equipos form</field>
+      <field name="model">equipos.equipos</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          </header>
+        <sheet>
+          <div class="oe_button_box">
+            <button name="cambiar_budget" class="oe_stat_button" type="object" icon="fa-dollar" string="Regenerar budget">
+            <div class="o_form_field o_stat_info">
+              <span class="o_stat_value">
+                <field name="budget" string="Budget"/>
+              </span>
+              <span class="o_stat_text">Budget</span>
+            </div>
+            </button>
+          </div>
+            <field name="logo" widget="image"/>
+            <separator string="Información"></separator>
+          <group>
+            <group>
+              <field name="name"/>
+              <field name="conference"/>
+            </group>
+            <group>
+              <field name="budget"/>
+              <field name="city"/>
+            </group>
+          </group>
+            <notebook>
+              <page string="Liga">
+                <field name="ligue"/>
+              </page>
+              <page string="Temporadas">
+                <field name="season"/>
+              </page>
+              <page string="Jugadores">
+                <field name="players">
+                  <tree>
+                    <field name="name"/>
+                    <field name="position"/>
+                    <field name="nationality"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="Capitán">
+                <field name="captain"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.jugadores_list">
+      <field name="name">Jugadores</field>
+      <field name="model">equipos.jugadores</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="position"/>
+          <field name="nationality"/>
+          <field name="team"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="equipos.action_window">
+      <field name="name">equipos window</field>
+      <field name="res_model">equipos.equipos</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_liga_window">
+      <field name="name">Liga</field>
+      <field name="res_model">equipos.liga</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_temporada_window">
+      <field name="name">Temporada</field>
+      <field name="res_model">equipos.temporada</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_jugadores_window">
+      <field name="name">Jugadores</field>
+      <field name="res_model">equipos.jugadores</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="equipos.action_server">
+      <field name="name">equipos server</field>
+      <field name="model_id" ref="model_equipos_equipos"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="equipos" id="equipos.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Menu 1" id="equipos.menu_1" parent="equipos.menu_root"/>
+    <!-- actions -->
+    <menuitem name="Equipos" id="equipos.menu_1_list" parent="equipos.menu_1"
+              action="equipos.action_window"/>
+      <menuitem name="Ligas" id="equipos.menu_liga_list" parent="equipos.menu_1"
+              action="equipos.action_liga_window"/>
+      <menuitem name="Temporadas" id="equipos.menu_temporada_list" parent="equipos.menu_1"
+              action="equipos.action_temporada_window"/>
+      <menuitem name="Jugadores" id="equipos.menu_jugadores_list" parent="equipos.menu_1"
+              action="equipos.action_jugadores_window"/>
+  </data>
+</odoo>

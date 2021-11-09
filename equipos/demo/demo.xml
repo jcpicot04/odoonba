@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+
+          <record id="season1" model="equipos.temporada">
+            <field name="name">2022</field>
+          </record>
+          <record id="season2" model="equipos.temporada">
+            <field name="name">2023</field>
+          </record>
+          <record id="team1" model="equipos.equipos">
+            <field name="name">Lakers</field>
+            <field name="conference">este</field>
+            <field name="city">Alzira</field>
+            <field name="season" eval="[(6,0,[ref('equipos.season1'),ref('equipos.season2')])]"></field>
+          </record>
+    </data>
+</odoo>

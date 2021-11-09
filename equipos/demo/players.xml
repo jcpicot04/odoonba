@@ -1,0 +1,1692 @@
+<odoo><data>
+<record id='playerJuhann_Begarin' model='equipos.jugadores'>
+<field name='name'>Juhann Begarin</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJaylen_Brown' model='equipos.jugadores'>
+<field name='name'>Jaylen Brown</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKris_Dunn' model='equipos.jugadores'>
+<field name='name'>Kris Dunn</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCarsen_Edwards' model='equipos.jugadores'>
+<field name='name'>Carsen Edwards</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTacko_Fall' model='equipos.jugadores'>
+<field name='name'>Tacko Fall</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBruno_Fernando' model='equipos.jugadores'>
+<field name='name'>Bruno Fernando</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAl_Horford' model='equipos.jugadores'>
+<field name='name'>Al Horford</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerEnes_Kanter' model='equipos.jugadores'>
+<field name='name'>Enes Kanter</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLuke_Kornet' model='equipos.jugadores'>
+<field name='name'>Luke Kornet</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRomeo_Langford' model='equipos.jugadores'>
+<field name='name'>Romeo Langford</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAaron_Nesmith' model='equipos.jugadores'>
+<field name='name'>Aaron Nesmith</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJabari_Parker' model='equipos.jugadores'>
+<field name='name'>Jabari Parker</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPayton_Pritchard' model='equipos.jugadores'>
+<field name='name'>Payton Pritchard</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJosh_Richardson' model='equipos.jugadores'>
+<field name='name'>Josh Richardson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDennis_Schroder' model='equipos.jugadores'>
+<field name='name'>Dennis Schroder</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarcus_Smart' model='equipos.jugadores'>
+<field name='name'>Marcus Smart</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJayson_Tatum' model='equipos.jugadores'>
+<field name='name'>Jayson Tatum</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGrant_Williams' model='equipos.jugadores'>
+<field name='name'>Grant Williams</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRobert_Williams_III' model='equipos.jugadores'>
+<field name='name'>Robert Williams III</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLaMarcus_Aldridge' model='equipos.jugadores'>
+<field name='name'>LaMarcus Aldridge</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeAndre_Bembry' model='equipos.jugadores'>
+<field name='name'>DeAndre Bembry</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBruce_Brown' model='equipos.jugadores'>
+<field name='name'>Bruce Brown</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJevon_Carter' model='equipos.jugadores'>
+<field name='name'>Jevon Carter</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNicolas_Claxton' model='equipos.jugadores'>
+<field name='name'>Nicolas Claxton</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSekou_Doumbouya' model='equipos.jugadores'>
+<field name='name'>Sekou Doumbouya</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKevin_Durant' model='equipos.jugadores'>
+<field name='name'>Kevin Durant</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKessler_Edwards' model='equipos.jugadores'>
+<field name='name'>Kessler Edwards</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRaiQuan_Gray' model='equipos.jugadores'>
+<field name='name'>RaiQuan Gray</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBlake_Griffin' model='equipos.jugadores'>
+<field name='name'>Blake Griffin</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJames_Harden' model='equipos.jugadores'>
+<field name='name'>James Harden</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJoe_Harris' model='equipos.jugadores'>
+<field name='name'>Joe Harris</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKyrie_Irving' model='equipos.jugadores'>
+<field name='name'>Kyrie Irving</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMike_James' model='equipos.jugadores'>
+<field name='name'>Mike James</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAlize_Johnson' model='equipos.jugadores'>
+<field name='name'>Alize Johnson</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJames_Johnson' model='equipos.jugadores'>
+<field name='name'>James Johnson</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTyler_Johnson' model='equipos.jugadores'>
+<field name='name'>Tyler Johnson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTimothe_Luwawu_Cabarrot' model='equipos.jugadores'>
+<field name='name'>Timothe Luwawu Cabarrot</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPatty_Mills' model='equipos.jugadores'>
+<field name='name'>Patty Mills</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPaul_Millsap' model='equipos.jugadores'>
+<field name='name'>Paul Millsap</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJahlil_Okafor' model='equipos.jugadores'>
+<field name='name'>Jahlil Okafor</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerReggie_Perry' model='equipos.jugadores'>
+<field name='name'>Reggie Perry</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDayRon_Sharpe' model='equipos.jugadores'>
+<field name='name'>DayRon Sharpe</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCameron_Thomas' model='equipos.jugadores'>
+<field name='name'>Cameron Thomas</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarcus_Zegarowski' model='equipos.jugadores'>
+<field name='name'>Marcus Zegarowski</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDwayne_Bacon' model='equipos.jugadores'>
+<field name='name'>Dwayne Bacon</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRJ_Barrett' model='equipos.jugadores'>
+<field name='name'>RJ Barrett</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAlec_Burks' model='equipos.jugadores'>
+<field name='name'>Alec Burks</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerEvan_Fournier' model='equipos.jugadores'>
+<field name='name'>Evan Fournier</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTaj_Gibson' model='equipos.jugadores'>
+<field name='name'>Taj Gibson</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerQuentin_Grimes' model='equipos.jugadores'>
+<field name='name'>Quentin Grimes</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJared_Harper' model='equipos.jugadores'>
+<field name='name'>Jared Harper</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKevin_Knox_II' model='equipos.jugadores'>
+<field name='name'>Kevin Knox II</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMiles_McBride' model='equipos.jugadores'>
+<field name='name'>Miles McBride</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNerlens_Noel' model='equipos.jugadores'>
+<field name='name'>Nerlens Noel</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFrank_Ntilikina' model='equipos.jugadores'>
+<field name='name'>Frank Ntilikina</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNorvel_Pelle' model='equipos.jugadores'>
+<field name='name'>Norvel Pelle</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTheo_Pinson' model='equipos.jugadores'>
+<field name='name'>Theo Pinson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerImmanuel_Quickley' model='equipos.jugadores'>
+<field name='name'>Immanuel Quickley</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJulius_Randle' model='equipos.jugadores'>
+<field name='name'>Julius Randle</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMitchell_Robinson' model='equipos.jugadores'>
+<field name='name'>Mitchell Robinson</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDerrick_Rose' model='equipos.jugadores'>
+<field name='name'>Derrick Rose</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJericho_Sims' model='equipos.jugadores'>
+<field name='name'>Jericho Sims</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerObi_Toppin' model='equipos.jugadores'>
+<field name='name'>Obi Toppin</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLuca_Vildoza' model='equipos.jugadores'>
+<field name='name'>Luca Vildoza</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKemba_Walker' model='equipos.jugadores'>
+<field name='name'>Kemba Walker</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCharles_Bassey' model='equipos.jugadores'>
+<field name='name'>Charles Bassey</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGary_Clark' model='equipos.jugadores'>
+<field name='name'>Gary Clark</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSeth_Curry' model='equipos.jugadores'>
+<field name='name'>Seth Curry</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAndre_Drummond' model='equipos.jugadores'>
+<field name='name'>Andre Drummond</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJoel_Embiid' model='equipos.jugadores'>
+<field name='name'>Joel Embiid</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDanny_Green' model='equipos.jugadores'>
+<field name='name'>Danny Green</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTobias_Harris' model='equipos.jugadores'>
+<field name='name'>Tobias Harris</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAaron_Henry' model='equipos.jugadores'>
+<field name='name'>Aaron Henry</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaiah_Joe' model='equipos.jugadores'>
+<field name='name'>Isaiah Joe</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFurkan_Korkmaz' model='equipos.jugadores'>
+<field name='name'>Furkan Korkmaz</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTyrese_Maxey' model='equipos.jugadores'>
+<field name='name'>Tyrese Maxey</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerShake_Milton' model='equipos.jugadores'>
+<field name='name'>Shake Milton</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGeorges_Niang' model='equipos.jugadores'>
+<field name='name'>Georges Niang</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFilip_Petrusev' model='equipos.jugadores'>
+<field name='name'>Filip Petrusev</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPaul_Reed' model='equipos.jugadores'>
+<field name='name'>Paul Reed</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGrant_Riller' model='equipos.jugadores'>
+<field name='name'>Grant Riller</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMike_Scott' model='equipos.jugadores'>
+<field name='name'>Mike Scott</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBen_Simmons' model='equipos.jugadores'>
+<field name='name'>Ben Simmons</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJaden_Springer' model='equipos.jugadores'>
+<field name='name'>Jaden Springer</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMatisse_Thybulle' model='equipos.jugadores'>
+<field name='name'>Matisse Thybulle</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPrecious_Achiuwa' model='equipos.jugadores'>
+<field name='name'>Precious Achiuwa</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerOG_Anunoby' model='equipos.jugadores'>
+<field name='name'>OG Anunoby</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDalano_Banton' model='equipos.jugadores'>
+<field name='name'>Dalano Banton</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerScottie_Barnes' model='equipos.jugadores'>
+<field name='name'>Scottie Barnes</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKhem_Birch' model='equipos.jugadores'>
+<field name='name'>Khem Birch</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaac_Bonga' model='equipos.jugadores'>
+<field name='name'>Isaac Bonga</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChris_Boucher' model='equipos.jugadores'>
+<field name='name'>Chris Boucher</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSam_Dekker' model='equipos.jugadores'>
+<field name='name'>Sam Dekker</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGoran_Dragic' model='equipos.jugadores'>
+<field name='name'>Goran Dragic</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMalachi_Flynn' model='equipos.jugadores'>
+<field name='name'>Malachi Flynn</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFreddie_Gillespie' model='equipos.jugadores'>
+<field name='name'>Freddie Gillespie</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDavid_Johnson' model='equipos.jugadores'>
+<field name='name'>David Johnson</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerStanley_Johnson' model='equipos.jugadores'>
+<field name='name'>Stanley Johnson</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPascal_Siakam' model='equipos.jugadores'>
+<field name='name'>Pascal Siakam</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGary_TrentJr' model='equipos.jugadores'>
+<field name='name'>Gary TrentJr</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFred_VanVleet' model='equipos.jugadores'>
+<field name='name'>Fred VanVleet</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerYuta_Watanabe' model='equipos.jugadores'>
+<field name='name'>Yuta Watanabe</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRyan_Arcidiacono' model='equipos.jugadores'>
+<field name='name'>Ryan Arcidiacono</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLonzo_Ball' model='equipos.jugadores'>
+<field name='name'>Lonzo Ball</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTony_Bradley' model='equipos.jugadores'>
+<field name='name'>Tony Bradley</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTroy_Brown_Jr' model='equipos.jugadores'>
+<field name='name'>Troy Brown Jr</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAlex_Caruso' model='equipos.jugadores'>
+<field name='name'>Alex Caruso</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeMar_DeRozan' model='equipos.jugadores'>
+<field name='name'>DeMar DeRozan</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAyo_Dosunmu' model='equipos.jugadores'>
+<field name='name'>Ayo Dosunmu</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDevon_Dotson' model='equipos.jugadores'>
+<field name='name'>Devon Dotson</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCristiano_Felicio' model='equipos.jugadores'>
+<field name='name'>Cristiano Felicio</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJavonte_Green' model='equipos.jugadores'>
+<field name='name'>Javonte Green</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDerrick_Jones_Jr' model='equipos.jugadores'>
+<field name='name'>Derrick Jones Jr</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerZach_LaVine' model='equipos.jugadores'>
+<field name='name'>Zach LaVine</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAdam_Mokoka' model='equipos.jugadores'>
+<field name='name'>Adam Mokoka</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDenzel_Valentine' model='equipos.jugadores'>
+<field name='name'>Denzel Valentine</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNikola_Vucevic' model='equipos.jugadores'>
+<field name='name'>Nikola Vucevic</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCoby_White' model='equipos.jugadores'>
+<field name='name'>Coby White</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPatrick_Williams' model='equipos.jugadores'>
+<field name='name'>Patrick Williams</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJarrett_Allen' model='equipos.jugadores'>
+<field name='name'>Jarrett Allen</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDamyean_Dotson' model='equipos.jugadores'>
+<field name='name'>Damyean Dotson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDarius_Garland' model='equipos.jugadores'>
+<field name='name'>Darius Garland</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMfiondu_Kabengele' model='equipos.jugadores'>
+<field name='name'>Mfiondu Kabengele</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKevin_Love' model='equipos.jugadores'>
+<field name='name'>Kevin Love</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLauri_Markkanen' model='equipos.jugadores'>
+<field name='name'>Lauri Markkanen</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerEvan_Mobley' model='equipos.jugadores'>
+<field name='name'>Evan Mobley</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaac_Okoro' model='equipos.jugadores'>
+<field name='name'>Isaac Okoro</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCedi_Osman' model='equipos.jugadores'>
+<field name='name'>Cedi Osman</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRicky_Rubio' model='equipos.jugadores'>
+<field name='name'>Ricky Rubio</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCollin_Sexton' model='equipos.jugadores'>
+<field name='name'>Collin Sexton</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLamar_Stevens' model='equipos.jugadores'>
+<field name='name'>Lamar Stevens</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBrodric_Thomas' model='equipos.jugadores'>
+<field name='name'>Brodric Thomas</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDean_Wade' model='equipos.jugadores'>
+<field name='name'>Dean Wade</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDylan_Windler' model='equipos.jugadores'>
+<field name='name'>Dylan Windler</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSaddiq_Bey' model='equipos.jugadores'>
+<field name='name'>Saddiq Bey</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCade_Cunningham' model='equipos.jugadores'>
+<field name='name'>Cade Cunningham</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerHamidou_Diallo' model='equipos.jugadores'>
+<field name='name'>Hamidou Diallo</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLuka_Garza' model='equipos.jugadores'>
+<field name='name'>Luka Garza</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJerami_Grant' model='equipos.jugadores'>
+<field name='name'>Jerami Grant</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKillian_Hayes' model='equipos.jugadores'>
+<field name='name'>Killian Hayes</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFrank_Jackson' model='equipos.jugadores'>
+<field name='name'>Frank Jackson</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJosh_Jackson' model='equipos.jugadores'>
+<field name='name'>Josh Jackson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCory_Joseph' model='equipos.jugadores'>
+<field name='name'>Cory Joseph</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBalsa_Koprivica' model='equipos.jugadores'>
+<field name='name'>Balsa Koprivica</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSaben_Lee' model='equipos.jugadores'>
+<field name='name'>Saben Lee</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaiah_Livers' model='equipos.jugadores'>
+<field name='name'>Isaiah Livers</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTrey_Lyles' model='equipos.jugadores'>
+<field name='name'>Trey Lyles</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRodney_McGruder' model='equipos.jugadores'>
+<field name='name'>Rodney McGruder</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKelly_Olynyk' model='equipos.jugadores'>
+<field name='name'>Kelly Olynyk</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChris_Smith' model='equipos.jugadores'>
+<field name='name'>Chris Smith</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDennis_Smith_Jr' model='equipos.jugadores'>
+<field name='name'>Dennis Smith Jr</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaiah_Stewart' model='equipos.jugadores'>
+<field name='name'>Isaiah Stewart</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGoga_Bitadze' model='equipos.jugadores'>
+<field name='name'>Goga Bitadze</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerOshae_Brissett' model='equipos.jugadores'>
+<field name='name'>Oshae Brissett</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMalcolm_Brogdon' model='equipos.jugadores'>
+<field name='name'>Malcolm Brogdon</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTorrey_Craig' model='equipos.jugadores'>
+<field name='name'>Torrey Craig</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChris_Duarte' model='equipos.jugadores'>
+<field name='name'>Chris Duarte</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJustin_Holiday' model='equipos.jugadores'>
+<field name='name'>Justin Holiday</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaiah_Jackson' model='equipos.jugadores'>
+<field name='name'>Isaiah Jackson</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeJon_Jarreau' model='equipos.jugadores'>
+<field name='name'>DeJon Jarreau</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJeremy_Lamb' model='equipos.jugadores'>
+<field name='name'>Jeremy Lamb</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCaris_LeVert' model='equipos.jugadores'>
+<field name='name'>Caris LeVert</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKelan_Martin' model='equipos.jugadores'>
+<field name='name'>Kelan Martin</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTJ_McConnell' model='equipos.jugadores'>
+<field name='name'>TJ McConnell</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDomantas_Saboni' model='equipos.jugadores'>
+<field name='name'>Domantas Saboni</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJaKarr_Sampson' model='equipos.jugadores'>
+<field name='name'>JaKarr Sampson</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCassius_Stanley' model='equipos.jugadores'>
+<field name='name'>Cassius Stanley</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerEdmond_Sumner' model='equipos.jugadores'>
+<field name='name'>Edmond Sumner</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMyles_Turner' model='equipos.jugadores'>
+<field name='name'>Myles Turner</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTJ_Warren' model='equipos.jugadores'>
+<field name='name'>TJ Warren</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGrayson_Allen' model='equipos.jugadores'>
+<field name='name'>Grayson Allen</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGiannis_Antetokounmpo' model='equipos.jugadores'>
+<field name='name'>Giannis Antetokounmpo</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerThanasis_Antetokounmpo' model='equipos.jugadores'>
+<field name='name'>Thanasis Antetokounmpo</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerElijah_Bryant' model='equipos.jugadores'>
+<field name='name'>Elijah Bryant</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPat_Connaughton' model='equipos.jugadores'>
+<field name='name'>Pat Connaughton</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDonte_DiVincenzo' model='equipos.jugadores'>
+<field name='name'>Donte DiVincenzo</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMamadi_Diakite' model='equipos.jugadores'>
+<field name='name'>Mamadi Diakite</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGeorge_Hill' model='equipos.jugadores'>
+<field name='name'>George Hill</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJrue_Holiday' model='equipos.jugadores'>
+<field name='name'>Jrue Holiday</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRodney_Hood' model='equipos.jugadores'>
+<field name='name'>Rodney Hood</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJustin_Jackson' model='equipos.jugadores'>
+<field name='name'>Justin Jackson</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRodions_Kurucs' model='equipos.jugadores'>
+<field name='name'>Rodions Kurucs</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBrook_Lopez' model='equipos.jugadores'>
+<field name='name'>Brook Lopez</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSandro_Mamukelashvili' model='equipos.jugadores'>
+<field name='name'>Sandro Mamukelashvili</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKhris_Middleton' model='equipos.jugadores'>
+<field name='name'>Khris Middleton</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJordan_Nwora' model='equipos.jugadores'>
+<field name='name'>Jordan Nwora</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSemi_Ojeleye' model='equipos.jugadores'>
+<field name='name'>Semi Ojeleye</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBobby_Portis' model='equipos.jugadores'>
+<field name='name'>Bobby Portis</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJeff_Teague' model='equipos.jugadores'>
+<field name='name'>Jeff Teague</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAxel_Toupane' model='equipos.jugadores'>
+<field name='name'>Axel Toupane</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBogdan_Bogdanovic' model='equipos.jugadores'>
+<field name='name'>Bogdan Bogdanovic</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerClint_Capela' model='equipos.jugadores'>
+<field name='name'>Clint Capela</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJohn_Collins' model='equipos.jugadores'>
+<field name='name'>John Collins</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSharife_Cooper' model='equipos.jugadores'>
+<field name='name'>Sharife Cooper</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGorgui_Dieng' model='equipos.jugadores'>
+<field name='name'>Gorgui Dieng</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDanilo_Gallinari' model='equipos.jugadores'>
+<field name='name'>Danilo Gallinari</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBrandon_Goodwin' model='equipos.jugadores'>
+<field name='name'>Brandon Goodwin</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSolomon_Hill' model='equipos.jugadores'>
+<field name='name'>Solomon Hill</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKevin_Huerter' model='equipos.jugadores'>
+<field name='name'>Kevin Huerter</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeAndre_Hunter' model='equipos.jugadores'>
+<field name='name'>DeAndre Hunter</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJalen_Johnson' model='equipos.jugadores'>
+<field name='name'>Jalen Johnson</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSkylar_Mays' model='equipos.jugadores'>
+<field name='name'>Skylar Mays</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerOnyeka_Okongwu' model='equipos.jugadores'>
+<field name='name'>Onyeka Okongwu</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCam_Reddish' model='equipos.jugadores'>
+<field name='name'>Cam Reddish</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLou_Williams' model='equipos.jugadores'>
+<field name='name'>Lou Williams</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDelon_Wright' model='equipos.jugadores'>
+<field name='name'>Delon Wright</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTrae_Young' model='equipos.jugadores'>
+<field name='name'>Trae Young</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLaMelo_Ball' model='equipos.jugadores'>
+<field name='name'>LaMelo Ball</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBismack_Biyombo' model='equipos.jugadores'>
+<field name='name'>Bismack Biyombo</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJames_Bouknight' model='equipos.jugadores'>
+<field name='name'>James Bouknight</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMiles_Bridges' model='equipos.jugadores'>
+<field name='name'>Miles Bridges</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerVernon_Carey_Jr' model='equipos.jugadores'>
+<field name='name'>Vernon Carey Jr</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNate_Darling' model='equipos.jugadores'>
+<field name='name'>Nate Darling</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGordon_Hayward' model='equipos.jugadores'>
+<field name='name'>Gordon Hayward</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerWes_Iwundu' model='equipos.jugadores'>
+<field name='name'>Wes Iwundu</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKai_Jones' model='equipos.jugadores'>
+<field name='name'>Kai Jones</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerScottie_Lewis' model='equipos.jugadores'>
+<field name='name'>Scottie Lewis</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCaleb_Martin' model='equipos.jugadores'>
+<field name='name'>Caleb Martin</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCody_Martin' model='equipos.jugadores'>
+<field name='name'>Cody Martin</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJalen_McDaniels' model='equipos.jugadores'>
+<field name='name'>Jalen McDaniels</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKelly_Oubre_Jr' model='equipos.jugadores'>
+<field name='name'>Kelly Oubre Jr</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMason_Plumlee' model='equipos.jugadores'>
+<field name='name'>Mason Plumlee</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNick_Richards' model='equipos.jugadores'>
+<field name='name'>Nick Richards</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTerry_Rozier' model='equipos.jugadores'>
+<field name='name'>Terry Rozier</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsh_Smith' model='equipos.jugadores'>
+<field name='name'>Ish Smith</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJT_Thor' model='equipos.jugadores'>
+<field name='name'>JT Thor</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBrad_Wanamaker' model='equipos.jugadores'>
+<field name='name'>Brad Wanamaker</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPJ_Washington' model='equipos.jugadores'>
+<field name='name'>PJ Washington</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBam_Adebayo' model='equipos.jugadores'>
+<field name='name'>Bam Adebayo</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJimmy_Butler' model='equipos.jugadores'>
+<field name='name'>Jimmy Butler</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDewayne_Dedmon' model='equipos.jugadores'>
+<field name='name'>Dewayne Dedmon</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarcus_Garrett' model='equipos.jugadores'>
+<field name='name'>Marcus Garrett</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerUdonis_Haslem' model='equipos.jugadores'>
+<field name='name'>Udonis Haslem</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTyler_Herro' model='equipos.jugadores'>
+<field name='name'>Tyler Herro</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKyle_Lowry' model='equipos.jugadores'>
+<field name='name'>Kyle Lowry</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarkieff_Morris' model='equipos.jugadores'>
+<field name='name'>Markieff Morris</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRJ_Nembhard' model='equipos.jugadores'>
+<field name='name'>RJ Nembhard</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKZ_Okpala' model='equipos.jugadores'>
+<field name='name'>KZ Okpala</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerVictor_Oladipo' model='equipos.jugadores'>
+<field name='name'>Victor Oladipo</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDuncan_Robinson' model='equipos.jugadores'>
+<field name='name'>Duncan Robinson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDJ_Stewart_Jr' model='equipos.jugadores'>
+<field name='name'>DJ Stewart Jr</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMax_Strus' model='equipos.jugadores'>
+<field name='name'>Max Strus</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPJ_Tucker' model='equipos.jugadores'>
+<field name='name'>PJ Tucker</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGabe_Vincent' model='equipos.jugadores'>
+<field name='name'>Gabe Vincent</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerOmer_Yurtseven' model='equipos.jugadores'>
+<field name='name'>Omer Yurtseven</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCole_Anthony' model='equipos.jugadores'>
+<field name='name'>Cole Anthony</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMo_Bamba' model='equipos.jugadores'>
+<field name='name'>Mo Bamba</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIgnas_Brazdeikis' model='equipos.jugadores'>
+<field name='name'>Ignas Brazdeikis</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerWendell_Carter_Jr' model='equipos.jugadores'>
+<field name='name'>Wendell Carter Jr</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMichael_Carter_Williams' model='equipos.jugadores'>
+<field name='name'>Michael Carter Williams</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJeff_Dowtin' model='equipos.jugadores'>
+<field name='name'>Jeff Dowtin</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJames_Ennis_III' model='equipos.jugadores'>
+<field name='name'>James Ennis III</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarkelle_Fultz' model='equipos.jugadores'>
+<field name='name'>Markelle Fultz</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerHassani_Gravett' model='equipos.jugadores'>
+<field name='name'>Hassani Gravett</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRJ_Hampton' model='equipos.jugadores'>
+<field name='name'>RJ Hampton</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGary_Harris' model='equipos.jugadores'>
+<field name='name'>Gary Harris</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJonathan_Isaac' model='equipos.jugadores'>
+<field name='name'>Jonathan Isaac</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRobin_Lopez' model='equipos.jugadores'>
+<field name='name'>Robin Lopez</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChuma_Okeke' model='equipos.jugadores'>
+<field name='name'>Chuma Okeke</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChasson_Randle' model='equipos.jugadores'>
+<field name='name'>Chasson Randle</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTerrence_Ross' model='equipos.jugadores'>
+<field name='name'>Terrence Ross</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJalen_Suggs' model='equipos.jugadores'>
+<field name='name'>Jalen Suggs</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJon_Teske' model='equipos.jugadores'>
+<field name='name'>Jon Teske</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSindarius_Thornwell' model='equipos.jugadores'>
+<field name='name'>Sindarius Thornwell</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerFranz_Wagner' model='equipos.jugadores'>
+<field name='name'>Franz Wagner</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMoritz_Wagner' model='equipos.jugadores'>
+<field name='name'>Moritz Wagner</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeni_Avdija' model='equipos.jugadores'>
+<field name='name'>Deni Avdija</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerBradley_Beal' model='equipos.jugadores'>
+<field name='name'>Bradley Beal</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDavis_Bertans' model='equipos.jugadores'>
+<field name='name'>Davis Bertans</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerThomas_Bryant' model='equipos.jugadores'>
+<field name='name'>Thomas Bryant</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKentavious_Caldwell_Pope' model='equipos.jugadores'>
+<field name='name'>Kentavious Caldwell Pope</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSpencer_Dinwiddie' model='equipos.jugadores'>
+<field name='name'>Spencer Dinwiddie</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDaniel_Gafford' model='equipos.jugadores'>
+<field name='name'>Daniel Gafford</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAnthony_Gill' model='equipos.jugadores'>
+<field name='name'>Anthony Gill</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRui_Hachimura' model='equipos.jugadores'>
+<field name='name'>Rui Hachimura</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMontrezl_Harrell' model='equipos.jugadores'>
+<field name='name'>Montrezl Harrell</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAaron_Holiday' model='equipos.jugadores'>
+<field name='name'>Aaron Holiday</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCaleb_Homesley' model='equipos.jugadores'>
+<field name='name'>Caleb Homesley</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCorey_Kispert' model='equipos.jugadores'>
+<field name='name'>Corey Kispert</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKyle_Kuzma' model='equipos.jugadores'>
+<field name='name'>Kyle Kuzma</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGarrison_Mathews' model='equipos.jugadores'>
+<field name='name'>Garrison Mathews</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRaul_Neto' model='equipos.jugadores'>
+<field name='name'>Raul Neto</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIsaiah_Todd' model='equipos.jugadores'>
+<field name='name'>Isaiah Todd</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCassius_Winston' model='equipos.jugadores'>
+<field name='name'>Cassius Winston</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJordan_Bell' model='equipos.jugadores'>
+<field name='name'>Jordan Bell</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNemanja_Bjelica' model='equipos.jugadores'>
+<field name='name'>Nemanja Bjelica</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerChris_Chiozza' model='equipos.jugadores'>
+<field name='name'>Chris Chiozza</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerStephen_Curry' model='equipos.jugadores'>
+<field name='name'>Stephen Curry</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDraymond_Green' model='equipos.jugadores'>
+<field name='name'>Draymond Green</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAndre_Iguodala' model='equipos.jugadores'>
+<field name='name'>Andre Iguodala</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJonathan_Kuminga' model='equipos.jugadores'>
+<field name='name'>Jonathan Kuminga</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDamion_Lee' model='equipos.jugadores'>
+<field name='name'>Damion Lee</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKevon_Looney' model='equipos.jugadores'>
+<field name='name'>Kevon Looney</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNico_Mannion' model='equipos.jugadores'>
+<field name='name'>Nico Mannion</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMoses_Moody' model='equipos.jugadores'>
+<field name='name'>Moses Moody</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMychal_Mulder' model='equipos.jugadores'>
+<field name='name'>Mychal Mulder</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerGary_Payton_II' model='equipos.jugadores'>
+<field name='name'>Gary Payton II</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJordan_Poole' model='equipos.jugadores'>
+<field name='name'>Jordan Poole</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerOtto_Porter_Jr' model='equipos.jugadores'>
+<field name='name'>Otto Porter Jr</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKlay_Thompson' model='equipos.jugadores'>
+<field name='name'>Klay Thompson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJuan_Toscano_Anderson' model='equipos.jugadores'>
+<field name='name'>Juan Toscano Anderson</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAndrew_Wiggins' model='equipos.jugadores'>
+<field name='name'>Andrew Wiggins</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJames_Wiseman' model='equipos.jugadores'>
+<field name='name'>James Wiseman</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerNicolas_Batum' model='equipos.jugadores'>
+<field name='name'>Nicolas Batum</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerEric_Bledsoe' model='equipos.jugadores'>
+<field name='name'>Eric Bledsoe</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAmir_Coffey' model='equipos.jugadores'>
+<field name='name'>Amir Coffey</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeMarcus_Cousins' model='equipos.jugadores'>
+<field name='name'>DeMarcus Cousins</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerYogi_Ferrell' model='equipos.jugadores'>
+<field name='name'>Yogi Ferrell</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPaul_George' model='equipos.jugadores'>
+<field name='name'>Paul George</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerSerge_Ibaka' model='equipos.jugadores'>
+<field name='name'>Serge Ibaka</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerReggie_Jackson' model='equipos.jugadores'>
+<field name='name'>Reggie Jackson</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKeon_Johnson' model='equipos.jugadores'>
+<field name='name'>Keon Johnson</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLuke_Kennard' model='equipos.jugadores'>
+<field name='name'>Luke Kennard</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKawhi_Leonard' model='equipos.jugadores'>
+<field name='name'>Kawhi Leonard</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTerance_Mann' model='equipos.jugadores'>
+<field name='name'>Terance Mann</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarcus_Morris_Sr' model='equipos.jugadores'>
+<field name='name'>Marcus Morris Sr</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerPatrick_Patterson' model='equipos.jugadores'>
+<field name='name'>Patrick Patterson</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJason_Preston' model='equipos.jugadores'>
+<field name='name'>Jason Preston</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJay_Scrubb' model='equipos.jugadores'>
+<field name='name'>Jay Scrubb</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerJustise_Winslow' model='equipos.jugadores'>
+<field name='name'>Justise Winslow</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerIvica_Zubac' model='equipos.jugadores'>
+<field name='name'>Ivica Zubac</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKostas_Antetokounmpo' model='equipos.jugadores'>
+<field name='name'>Kostas Antetokounmpo</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerCarmelo_Anthony' model='equipos.jugadores'>
+<field name='name'>Carmelo Anthony</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTrevor_Ariza' model='equipos.jugadores'>
+<field name='name'>Trevor Ariza</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKent_Bazemore' model='equipos.jugadores'>
+<field name='name'>Kent Bazemore</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDevontae_Cacok' model='equipos.jugadores'>
+<field name='name'>Devontae Cacok</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerAnthony_Davis' model='equipos.jugadores'>
+<field name='name'>Anthony Davis</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerWayne_Ellington' model='equipos.jugadores'>
+<field name='name'>Wayne Ellington</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMarc_Gasol' model='equipos.jugadores'>
+<field name='name'>Marc Gasol</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerTalen_Horton_Tucker' model='equipos.jugadores'>
+<field name='name'>Talen Horton Tucker</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDwight_Howard' model='equipos.jugadores'>
+<field name='name'>Dwight Howard</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerLeBron_James' model='equipos.jugadores'>
+<field name='name'>LeBron James</field>
+<field name='position'>alero</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerWesley_Matthews' model='equipos.jugadores'>
+<field name='name'>Wesley Matthews</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerMalik_Monk' model='equipos.jugadores'>
+<field name='name'>Malik Monk</field>
+<field name='position'>escolta</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerKendrick_Nunn' model='equipos.jugadores'>
+<field name='name'>Kendrick Nunn</field>
+<field name='position'>alapivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRajon_Rondo' model='equipos.jugadores'>
+<field name='name'>Rajon Rondo</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerRussell_Westbrook' model='equipos.jugadores'>
+<field name='name'>Russell Westbrook</field>
+<field name='position'>base</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+<record id='playerDeandre_Ayton' model='equipos.jugadores'>
+<field name='name'>Deandre Ayton</field>
+<field name='position'>pivot</field>
+<field name='nationality'>ESP</field>
+<field name='team' ref='equipos.team1'></field></record>
+</data></odoo>
