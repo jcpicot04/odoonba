@@ -16,6 +16,23 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.search">
+      <field name="name">Equipos buscar</field>
+      <field name="model">equipos.equipos</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name"/>
+          <field name="conference"/>
+          <field name="budget" string="Min Budget" filter_domain="[('budget','>=',self)]"/>
+          <field name="city"/>
+          <field name="logo"/>
+          <filter name="este" string="Conferencia Este" domain="[('conference','=','este')]"></filter>
+          <filter name="oeste" string="Conferencia Oeste" domain="[('conference','=','oeste')]"></filter>
+          <filter name="group_by_ligue" string="Group by ligue" context="{'group_by': 'ligue'}"></filter>
+        </search>
+      </field>
+    </record>
+
     <record model="ir.ui.view" id="equipos.form">
       <field name="name">equipos form</field>
       <field name="model">equipos.equipos</field>
@@ -84,11 +101,85 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.jugadores_search">
+      <field name="name">Jugadores buscar</field>
+      <field name="model">equipos.jugadores</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name"/>
+          <field name="position"/>
+          <field name="nationality"/>
+          <field name="team"/>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.quick_create_equipos_form">
+      <field name="name">equipos.equipos form quickcreate</field>
+      <field name="model">equipos.equipos</field>
+      <field name="arch" type="xml">
+        <form>
+          <group>
+            <field name="name"/>
+            <field name="conference"/>
+            <field name="city"/>
+          </group>
+        </form>
+      </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="equipos.equipos_kanban">
+      <field name="name">Equipos</field>
+      <field name="model">equipos.equipos</field>
+      <field name="arch" type="xml">
+        <kanban default_order="city" on_create="quick_create"
+                quick_create_view="equipos.quick_create_equipos_form">
+          <field name="id"></field>
+          <field name="name"></field>
+          <templates>
+            <t t-name="kanban-box">
+              <div t-attf-class="oe_kanban_global_click o_kanban_record_has_image_fill">
+                <a type="open">
+                  <img class="oe_kanban_image"
+                       t-att-alt="record.name.value"
+                       t-att-src="kanban_image('equipos.equipos', 'logo' , record.id.value)" />
+
+                </a>
+                <div t-attf-class="oe_kanban_content">
+                  <h4>
+                    <a type="edit">
+                      <field name="name"></field>
+                    </a>
+                  </h4>
+                  <ul>
+                    <li>City: <field name="city"></field></li>
+                  </ul>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>  
+    </record>
+
+    <record model="ir.ui.view" id="equipos.partidos_calendar">
+      <field name="name">Partidos calendar</field>
+      <field name="model">equipos.partidos</field>
+      <field name="arch" type="xml">
+        <calendar string="Partidos calendar" date_start="date"
+                  date_delay="hours"
+                  color="ligue">
+          <field name="name"/>
+        </calendar>
+      </field>
+    </record>
+
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="equipos.action_window">
       <field name="name">equipos window</field>
       <field name="res_model">equipos.equipos</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record model="ir.actions.act_window" id="equipos.action_liga_window">
@@ -107,6 +198,12 @@
       <field name="name">Jugadores</field>
       <field name="res_model">equipos.jugadores</field>
       <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_partidos_window">
+      <field name="name">Equipos partidos window</field>
+      <field name="res_model">equipos.partidos</field>
+      <field name="view_mode">tree,form,calendar</field>
     </record>
 
     <!-- server action to the one above -->
@@ -138,5 +235,7 @@
               action="equipos.action_temporada_window"/>
       <menuitem name="Jugadores" id="equipos.menu_jugadores_list" parent="equipos.menu_1"
               action="equipos.action_jugadores_window"/>
+      <menuitem name="Partidos" id="equipos.menu_partidos_list" parent="equipos.menu_1"
+              action="equipos.action_partidos_window"/>
   </data>
 </odoo>

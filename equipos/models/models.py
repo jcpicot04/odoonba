@@ -25,7 +25,6 @@ class equipos(models.Model):
     season = fields.Many2many('equipos.temporada',related='ligue.season')
     players = fields.One2many(string='Jugadores',comodel_name='equipos.jugadores',inverse_name='team')
     captain = fields.Many2one('equipos.jugadores',compute='_get_captain')
-
     
     def _get_captain(self):
         for team in self:
@@ -55,12 +54,17 @@ class equipos(models.Model):
             s.write({'budget':budget})
 
 
+    @api.onchange('name')
+    def _onchange_name(self):
+        return { 'warning' : {'title':'Nombre','message':'Recuerda que el nombre de cada equipo debe ser único.','type':'notification'}}
+
 class liga(models.Model):
     _name = 'equipos.liga'
     _description = 'Liga'
 
     name = fields.Char(string='Nombre')
     teams = fields.One2many(string='Equipos',comodel_name='equipos.equipos',inverse_name='ligue')
+    calendar = fields.One2many(string='Partidos',comodel_name='equipos.partidos',inverse_name='ligue')
     season = fields.Many2many(comodel_name='equipos.temporada',
                               relation='league_season',
                               column1='league_id',
@@ -76,6 +80,10 @@ class liga(models.Model):
                 raise ValidationError('El nombre solo acepta letras. No introduzcas números o símbolos.')
 
     _sql_constraints = [ ('name_uniq','unique(name)','El nombre de la liga no se puede repetir') ]
+
+    @api.onchange('name')
+    def _onchange_name(self):
+        return { 'warning' : {'title':'Nombre','message':'Recuerda que el nombre de cada liga debe ser único.','type':'notification'}}
 
 class temporada(models.Model):
     _name = 'equipos.temporada'
@@ -119,3 +127,11 @@ class jugadores(models.Model):
                 raise ValidationError('La nacionalidad solo acepta letras. No introduzcas números o símbolos.')
 
     _sql_constraints = [ ('name_uniq','unique(name)','El nombre completo del jugador no se puede repetir') ]            
+
+class partidos(models.Model):
+    _name = 'equipos.partidos'
+    name = fields.Char()
+    date = fields.Datetime()
+    finish = fields.Datetime()
+    hours = fields.Integer()
+    ligue = fields.Many2one('equipos.liga', ondelete='set null')
