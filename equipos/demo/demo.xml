@@ -7,11 +7,26 @@
           <record id="season2" model="equipos.temporada">
             <field name="name">2023</field>
           </record>
+          <record id="season3" model="equipos.temporada">
+            <field name="name">2024</field>
+          </record>
+          <record id="season4" model="equipos.temporada">
+            <field name="name">2025</field>
+          </record>
+          <record id="ligue1" model="equipos.liga">
+            <field name="name">Francesa</field>
+          </record>
+          <record id="ligue2" model="equipos.liga">
+            <field name="name">Italiana</field>
+          </record>
+           <record id="ligue3" model="equipos.liga">
+            <field name="name">Turca</field>
+            <field name="season" eval="[(6,0,[ref('equipos.season3'),ref('equipos.season4')])]"></field>
+          </record>
           <record id="team1" model="equipos.equipos">
             <field name="name">Lakers</field>
             <field name="conference">este</field>
             <field name="city">Alzira</field>
-            <field name="season" eval="[(6,0,[ref('equipos.season1'),ref('equipos.season2')])]"></field>
           </record>
     </data>
 </odoo>

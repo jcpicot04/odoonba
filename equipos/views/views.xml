@@ -110,6 +110,11 @@
           <field name="position"/>
           <field name="nationality"/>
           <field name="team"/>
+          <filter name="base" string="Base" domain="[('position','=','base')]"></filter>
+          <filter name="escolta" string="Escolta" domain="[('position','=','escolta')]"></filter>
+          <filter name="alero" string="Alero" domain="[('position','=','alero')]"></filter>
+          <filter name="alapivot" string="Ala Pivot" domain="[('position','=','alapivot')]"></filter>
+          <filter name="pivot" string="Pivot" domain="[('position','=','pivot')]"></filter>
         </search>
       </field>
     </record>
@@ -177,7 +182,7 @@
 
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="equipos.action_window">
-      <field name="name">equipos window</field>
+      <field name="name">Equipos</field>
       <field name="res_model">equipos.equipos</field>
       <field name="view_mode">tree,form,kanban</field>
     </record>
