@@ -34,7 +34,7 @@
     </record>
 
     <record model="ir.ui.view" id="equipos.form">
-      <field name="name">equipos form</field>
+      <field name="name">Equipos</field>
       <field name="model">equipos.equipos</field>
       <field name="arch" type="xml">
         <form>
@@ -59,8 +59,12 @@
               <field name="conference"/>
             </group>
             <group>
-              <field name="budget"/>
+              <field name="budget" class="oe_read_only"/>
               <field name="city"/>
+              <field name="current_money" class="oe_read_only"/>
+              <field name="victories" class="oe_read_only"/>
+              <field name="loses" class="oe_read_only"/>
+              <field name="draws" class="oe_read_only"/>
             </group>
           </group>
             <notebook>
@@ -76,11 +80,161 @@
                     <field name="name"/>
                     <field name="position"/>
                     <field name="nationality"/>
+                    <field name="pricepool" sum="Total"/>
                   </tree>
                 </field>
               </page>
               <page string="Capitán">
                 <field name="captain"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.liga_form">
+      <field name="name">Ligas</field>
+      <field name="model">equipos.liga</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          </header>
+        <sheet>
+          <div class="oe_button_box">
+            <button name="renovar_season" class="oe_stat_button" type="object" icon="fa-pencil" string="Renovar temporada 2025">
+            </button>
+          </div>
+            <field name="logo" widget="image"/>
+            <separator string="Información"></separator>
+          <group>
+              <field name="name"/>
+              <field name="finished"/>
+          </group>
+            <notebook>
+              <page string="Equipos">
+                <field name="teams">
+                  <tree>
+                    <field name="name"/>
+                    <field name="budget"/>
+                    <field name="city"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="Equipos más asalariados">
+                <field name="top_teams">
+                  <tree>
+                    <field name="name"/>
+                    <field name="budget"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="Tabla de clasificación">
+                <field name="top_winners">
+                  <tree>
+                    <field name="name"/>
+                    <field name="victories"/>
+                    <field name="loses"/>
+                    <field name="draws"/>
+                  </tree>
+                </field>
+              </page>
+              <page string="Calendario">
+                <field name="calendar"/>
+              </page>
+              <page string="Temporada">
+                <field name="season"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.temporada_form">
+      <field name="name">Temporadas</field>
+      <field name="model">equipos.temporada</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          </header>
+        <sheet>
+          <div class="oe_button_box">
+            <button name="check_id" class="oe_stat_button" type="object" icon="fa-pencil" string="Check id">
+            </button>
+          </div>
+            <separator string="Información"></separator>
+          <group>
+              <field name="name"/>
+          </group>
+            <notebook>
+              <page string="Ligas">
+                <field name="teamsseason"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.jugadores_form">
+      <field name="name">Jugadores</field>
+      <field name="model">equipos.jugadores</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          </header>
+        <sheet>
+            <field name="logo" widget="image"/>
+            <separator string="Información"></separator>
+          <group>
+              <field name="name"/>
+              <field name="position"/>
+              <field name="nationality"/>
+              <field name="pricepool" class="oe_read_only"/>
+              <field name="free"/>
+          </group>
+            <notebook>
+              <page string="Equipo">
+                <field name="team"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="equipos.partidos_form">
+      <field name="name">Partidos</field>
+      <field name="model">equipos.partidos</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          </header>
+        <sheet>
+            <separator string="Información"></separator>
+          <group>
+              <field name="name" class="oe_read_only"/>
+          </group>
+          <group>
+              <field name="date"/>
+              <field name="hours" class="oe_read_only"/>
+          </group>
+          <group>
+              <field name="team1"/>
+              <field name="team2"/>
+              <field name="team1_points" class="oe_read_only"/>
+              <field name="team2_points" class="oe_read_only"/>
+              <field name="winner" class="oe_read_only"/>
+          </group>
+            <notebook>
+              <page string="Liga">
+                <field name="ligue"/>
+              </page>
+            </notebook>
+            <notebook>
+              <page string="Resultado">
+              <field name="result" class="oe_read_only"/>
               </page>
             </notebook>
           </sheet>
@@ -97,9 +251,11 @@
           <field name="position"/>
           <field name="nationality"/>
           <field name="team"/>
+          <field name="pricepool"/>
         </tree>
       </field>
     </record>
+    
 
     <record model="ir.ui.view" id="equipos.jugadores_search">
       <field name="name">Jugadores buscar</field>
@@ -230,7 +386,7 @@
     <!-- Top menu item -->
     <menuitem name="equipos" id="equipos.menu_root"/>
     <!-- menu categories -->
-    <menuitem name="Menu 1" id="equipos.menu_1" parent="equipos.menu_root"/>
+    <menuitem name="Menu" id="equipos.menu_1" parent="equipos.menu_root"/>
     <!-- actions -->
     <menuitem name="Equipos" id="equipos.menu_1_list" parent="equipos.menu_1"
               action="equipos.action_window"/>

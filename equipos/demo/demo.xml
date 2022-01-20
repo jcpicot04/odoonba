@@ -18,15 +18,86 @@
           </record>
           <record id="ligue2" model="equipos.liga">
             <field name="name">Italiana</field>
+            <field name="season" eval="[(6,0,[ref('equipos.season1'),ref('equipos.season2')])]"></field>
           </record>
            <record id="ligue3" model="equipos.liga">
             <field name="name">Turca</field>
             <field name="season" eval="[(6,0,[ref('equipos.season3'),ref('equipos.season4')])]"></field>
           </record>
           <record id="team1" model="equipos.equipos">
-            <field name="name">Lakers</field>
+            <field name="name">Tenerife</field>
             <field name="conference">este</field>
             <field name="city">Alzira</field>
+          </record>
+          <record id="team2" model="equipos.equipos">
+            <field name="name">Celtics</field>
+            <field name="conference">oeste</field>
+            <field name="city">Carcaixent</field>
+          </record>
+          <record id="team3" model="equipos.equipos">
+            <field name="name">Barcelona</field>
+            <field name="conference">este</field>
+            <field name="city">Barcelona</field>
+          </record>
+          <record id="team4" model="equipos.equipos">
+            <field name="name">Madrid</field>
+            <field name="conference">este</field>
+            <field name="city">Madrid</field>
+          </record>
+          <record id="team5" model="equipos.equipos">
+            <field name="name">Valencia</field>
+            <field name="conference">oeste</field>
+            <field name="city">Valencia</field>
+          </record>
+          <record id="team6" model="equipos.equipos">
+            <field name="name">Mavericks</field>
+            <field name="conference">este</field>
+            <field name="city">Dallas</field>
+          </record>
+          <record id="team7" model="equipos.equipos">
+            <field name="name">Grizzlies</field>
+            <field name="conference">este</field>
+            <field name="city">Memphis</field>
+          </record>
+          <record id="team8" model="equipos.equipos">
+            <field name="name">Probando</field>
+            <field name="conference">este</field>
+            <field name="city">Probando</field>
+          </record>
+          <record id="team9" model="equipos.equipos">
+            <field name="name">Prueba</field>
+            <field name="conference">oeste</field>
+            <field name="city">Prueba</field>
+          </record>
+          <record id="team10" model="equipos.equipos">
+            <field name="name">Ejemplo</field>
+            <field name="conference">este</field>
+            <field name="city">Ejemplo</field>
+          </record>
+          <record id="team11" model="equipos.equipos">
+            <field name="name">Otro</field>
+            <field name="conference">oeste</field>
+            <field name="city">Otro</field>
+          </record>
+          <record id="team12" model="equipos.equipos">
+            <field name="name">Clippers</field>
+            <field name="conference">este</field>
+            <field name="city">LA</field>
+          </record>
+          <record id="team13" model="equipos.equipos">
+            <field name="name">Mas</field>
+            <field name="conference">oeste</field>
+            <field name="city">Mas</field>
+          </record>
+          <record id="team14" model="equipos.equipos">
+            <field name="name">Lakers</field>
+            <field name="conference">este</field>
+            <field name="city">LA</field>
+          </record>
+          <record id="team15" model="equipos.equipos">
+            <field name="name">Tau</field>
+            <field name="conference">este</field>
+            <field name="city">Oviedo</field>
           </record>
     </data>
 </odoo>

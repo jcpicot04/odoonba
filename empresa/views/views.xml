@@ -1,7 +1,7 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
+<!--
     <record model="ir.ui.view" id="empresa.furgoneta_list">
       <field name="name">Furgonetes</field>
       <field name="model">empresa.furgoneta</field>
@@ -121,3 +121,4 @@
               action="empresa.paquet_action_window"/>
   </data>
 </odoo>
+-->

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-
+"""
 from odoo import models, fields, api, modules
 
 
@@ -48,3 +48,4 @@ class paquet(models.Model):
     iden = fields.Integer()
     volum = fields.Integer()
     vi = fields.Many2one('empresa.viatge', ondelete='set null')
+    """
