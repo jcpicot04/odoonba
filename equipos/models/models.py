@@ -97,7 +97,8 @@ class liga(models.Model):
     teams = fields.One2many(string='Equipos',comodel_name='equipos.equipos',inverse_name='ligue')
     top_teams = fields.One2many(string='Equipos con mayor budget',comodel_name='equipos.equipos',inverse_name='ligue',compute='_get_top_team')
     top_winners = fields.One2many(string='Tabla de clasificación', comodel_name='equipos.equipos',inverse_name='ligue',compute='_get_winners_team')
-    finished = fields.Selection(selection=[('si', 'Si'),('no', 'No')],string='Liga terminada',default='no',required=True)
+    finished = fields.Selection(selection=[('si', 'Si'),('no', 'No')],string='Liga terminada',default='no',required=True,readonly=True)
+    matches = fields.Integer(string='Partidos jugados',default=0,readonly=True)
     calendar = fields.One2many(string='Partidos',comodel_name='equipos.partidos',inverse_name='ligue')
     season = fields.Many2many(comodel_name='equipos.temporada',
                               relation='league_season',
@@ -106,7 +107,31 @@ class liga(models.Model):
 
     def renovar_season(self):
             self.write({'season' : [(4,27,0)]})
-          
+
+    def reset_league(self):
+        cont1 = 0
+        cont2 = 0
+        for p in self:
+            for c in p.teams:
+                cont1+=1
+            cont2 = cont1 - 1
+            cont3 = cont1 * cont2
+            print(cont1)
+            print(cont3)
+            print(p.matches)
+            if cont3 == p.matches:
+                p.finished = 'si'
+                p.matches = 0
+                for t in p.teams:
+                    t.victories = 0
+                    t.loses = 0
+                    t.draws = 0
+                for i in p.calendar:
+                    self.write({'calendar' : [(2,i.id,0)]})
+            else:
+                raise ValidationError('La temporada no ha terminado. Podrás volver a empezar cuando todos los partidos se hayan jugado (ida y vuelta)')
+
+
     def _get_top_team(self):
         for lig in self:
             if lig.teams:
@@ -132,6 +157,15 @@ class liga(models.Model):
             else:    
                 raise ValidationError('El nombre solo acepta letras. No introduzcas números o símbolos.')
 
+    @api.constrains('season')
+    def _check_season(self):
+        for s in self:
+            for p in s.season:
+                if p.name == str(datetime.today().year):
+                    print(p.name)
+                else:    
+                    raise ValidationError('Se debe jugar en la temporada ' + str(datetime.today().year))
+
     _sql_constraints = [ ('name_uniq','unique(name)','El nombre de la liga no se puede repetir') ]
 
     @api.onchange('name')
@@ -146,7 +180,8 @@ class temporada(models.Model):
     teamsseason = fields.Many2many(comodel_name='equipos.liga',
                                    relation='league_season',
                                    column2='league_id',
-                                   column1='season_id')    
+                                   column1='season_id',
+                                   readonly=True)    
     def check_id(self):
         for l in self:
             print(l.id)
@@ -230,14 +265,17 @@ class partidos(models.Model):
                 i.winner = i.team1.name
                 i.team1.victories +=1
                 i.team2.loses +=1
+                i.ligue.matches +=1
             elif i.team2_points > i.team1_points:
                 i.winner = i.team2.name
                 i.team2.victories +=1
                 i.team1.loses +=1
+                i.ligue.matches +=1
             else:
                 i.winner = 'Empate'
                 i.team1.draws += 1
                 i.team2.draws += 1
+                i.ligue.matches +=1
         
     @api.constrains('name','ligue')
     def _get_matches(self):
@@ -246,14 +284,12 @@ class partidos(models.Model):
 
         for p in all_match:
             for i in self:
-                print('array nombre: ' + str(p.name))
-                print('partido nombre: ' + str(i.name))
-                print('partido nombre liga: ' + str(i.ligue.name))
-                print('array nombre liga: ' + str(p.ligue.name))
                 if str(p.name) == str(i.name) and str(i.ligue.name) == str(p.ligue.name):
                     raise ValidationError('Este partido ya ha sido jugado.')
                 else:    
-                    print('entra 2: ' + str(i.name))
+                    for p in i.ligue:
+                        if p.finished == 'si':
+                            p.finished = 'no'
             
     @api.constrains('team1','team2')
     def _check_teams(self):

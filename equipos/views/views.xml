@@ -102,14 +102,17 @@
           </header>
         <sheet>
           <div class="oe_button_box">
-            <button name="renovar_season" class="oe_stat_button" type="object" icon="fa-pencil" string="Renovar temporada 2025">
+            <button name="renovar_season" class="oe_stat_button" type="object" icon="fa-pencil" string="Añadir liga a la temporada actual">
+            </button>
+            <button name="reset_league" class="oe_stat_button" type="object" icon="fa-pencil" string="Resetear temporada">
             </button>
           </div>
             <field name="logo" widget="image"/>
             <separator string="Información"></separator>
           <group>
               <field name="name"/>
-              <field name="finished"/>
+              <field name="finished" class="oe_read_only"/>
+              <field name="matches" class="oe_read_only"/>
           </group>
             <notebook>
               <page string="Equipos">
@@ -208,7 +211,7 @@
       <field name="name">Partidos</field>
       <field name="model">equipos.partidos</field>
       <field name="arch" type="xml">
-        <form>
+        <form edit="false">
         <header>
           </header>
         <sheet>
