@@ -296,7 +296,6 @@
       </field>
     </record>
     
-
     <record model="ir.ui.view" id="equipos.jugadores_search">
       <field name="name">Jugadores buscar</field>
       <field name="model">equipos.jugadores</field>
@@ -376,11 +375,38 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="view_order_line_graph">
+      <field name="name">Jugadores pricepool</field>
+      <field name="model">equipos.jugadores</field>
+      <field name="type">graph</field>
+      <field name="arch" type="xml">
+        <graph string="Jugadores pricepool" orientation="horizontal" type="bar">
+            <field name="name"/>
+            <field name="pricepool" type='measure'/>
+        </graph>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_order_line_graph">
+      <field name="name">Equipos resultados y budget</field>
+      <field name="model">equipos.equipos</field>
+      <field name="type">graph</field>
+      <field name="arch" type="xml">
+        <graph string="Equipos resultados" orientation="horizontal" type="bar">
+            <field name="name"/>
+            <field name="budget" type='measure'/>
+            <field name="victories" type='measure'/>
+            <field name="loses" type='measure'/>
+            <field name="draws" type='measure'/>
+        </graph>
+      </field>
+    </record>
+
     <!-- actions opening views on models -->
     <record model="ir.actions.act_window" id="action_window">
       <field name="name">Equipos</field>
       <field name="res_model">equipos.equipos</field>
-      <field name="view_mode">tree,form,kanban</field>
+      <field name="view_mode">tree,form,kanban,graph</field>
     </record>
 
     <record model="ir.actions.act_window" id="action_liga_window">
@@ -398,7 +424,7 @@
     <record model="ir.actions.act_window" id="equipos.action_jugadores_window">
       <field name="name">Jugadores</field>
       <field name="res_model">equipos.jugadores</field>
-      <field name="view_mode">tree,form</field>
+      <field name="view_mode">tree,form,graph</field>
     </record>
 
     <record model="ir.actions.act_window" id="equipos.action_partidos_window">

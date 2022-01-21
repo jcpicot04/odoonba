@@ -193,6 +193,12 @@ class temporada(models.Model):
                                    column2='league_id',
                                    column1='season_id',
                                    readonly=True)    
+
+    @api.model
+    def cron_do_season(self):
+        year = str(datetime.today().year)
+        self.create({'name': year})
+
     def check_id(self):
         for l in self:
             print(l.id)
