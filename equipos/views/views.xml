@@ -62,6 +62,7 @@
               <field name="budget" class="oe_read_only"/>
               <field name="city"/>
               <field name="current_money" class="oe_read_only"/>
+              <field name="coaching_staff" class="oe_read_only"/>
               <field name="victories" class="oe_read_only"/>
               <field name="loses" class="oe_read_only"/>
               <field name="draws" class="oe_read_only"/>
@@ -93,7 +94,7 @@
       </field>
     </record>
 
-    <record model="ir.ui.view" id="equipos.liga_form">
+    <record model="ir.ui.view" id="liga_form">
       <field name="name">Ligas</field>
       <field name="model">equipos.liga</field>
       <field name="arch" type="xml">
@@ -106,6 +107,8 @@
             </button>
             <button name="reset_league" class="oe_stat_button" type="object" icon="fa-pencil" string="Resetear temporada">
             </button>
+            <button name="%(launch_match)d" type="action" string="Jugar partido" class="oe_highlight" context="{'default_ligue':active_id, 'default_date':current_date}">
+             </button>
           </div>
             <field name="logo" widget="image"/>
             <separator string="Información"></separator>
@@ -207,7 +210,7 @@
       </field>
     </record>
     
-    <record model="ir.ui.view" id="equipos.partidos_form">
+    <record model="ir.ui.view" id="partidos_form">
       <field name="name">Partidos</field>
       <field name="model">equipos.partidos</field>
       <field name="arch" type="xml">
@@ -238,6 +241,40 @@
             <notebook>
               <page string="Resultado">
               <field name="result" class="oe_read_only"/>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <act_window id="launch_match"
+                name="Jugar partido"
+                binding_model="equipos.liga"
+                res_model="equipos.partidos"
+                view_mode="form"
+                target="new"
+                />
+    <record model="ir.ui.view" id="equipos.coaching_form">
+      <field name="name">Coaching Staffs</field>
+      <field name="model">equipos.coaching</field>
+      <field name="arch" type="xml">
+        <form edit="false" create="false">
+        <header>
+          </header>
+        <sheet>
+            <separator string="Información"></separator>
+          <group>
+              <field name="name" class="oe_read_only"/>
+          </group>
+          <group>
+              <field name="head_coach" class="oe_read_only"/>
+              <field name="assistant_coach" class="oe_read_only"/>
+              <field name="advance_scout" class="oe_read_only"/>
+          </group>
+            <notebook>
+              <page string="Equipo">
+                <field name="team"/>
               </page>
             </notebook>
           </sheet>
@@ -340,13 +377,13 @@
     </record>
 
     <!-- actions opening views on models -->
-    <record model="ir.actions.act_window" id="equipos.action_window">
+    <record model="ir.actions.act_window" id="action_window">
       <field name="name">Equipos</field>
       <field name="res_model">equipos.equipos</field>
       <field name="view_mode">tree,form,kanban</field>
     </record>
 
-    <record model="ir.actions.act_window" id="equipos.action_liga_window">
+    <record model="ir.actions.act_window" id="action_liga_window">
       <field name="name">Liga</field>
       <field name="res_model">equipos.liga</field>
       <field name="view_mode">tree,form</field>
@@ -365,9 +402,15 @@
     </record>
 
     <record model="ir.actions.act_window" id="equipos.action_partidos_window">
-      <field name="name">Equipos partidos window</field>
+      <field name="name">Partidos</field>
       <field name="res_model">equipos.partidos</field>
       <field name="view_mode">tree,form,calendar</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_coaching_window">
+      <field name="name">Cuerpo técnico</field>
+      <field name="res_model">equipos.coaching</field>
+      <field name="view_mode">tree,form</field>
     </record>
 
     <!-- server action to the one above -->
@@ -392,14 +435,16 @@
     <menuitem name="Menu" id="equipos.menu_1" parent="equipos.menu_root"/>
     <!-- actions -->
     <menuitem name="Equipos" id="equipos.menu_1_list" parent="equipos.menu_1"
-              action="equipos.action_window"/>
+              action="action_window"/>
       <menuitem name="Ligas" id="equipos.menu_liga_list" parent="equipos.menu_1"
-              action="equipos.action_liga_window"/>
+              action="action_liga_window"/>
       <menuitem name="Temporadas" id="equipos.menu_temporada_list" parent="equipos.menu_1"
               action="equipos.action_temporada_window"/>
       <menuitem name="Jugadores" id="equipos.menu_jugadores_list" parent="equipos.menu_1"
               action="equipos.action_jugadores_window"/>
       <menuitem name="Partidos" id="equipos.menu_partidos_list" parent="equipos.menu_1"
               action="equipos.action_partidos_window"/>
+      <menuitem name="Cuerpo técnico" id="equipos.menu_coaching_list" parent="equipos.menu_1"
+              action="equipos.action_coaching_window"/>
   </data>
 </odoo>
