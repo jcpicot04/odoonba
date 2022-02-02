@@ -99,5 +99,80 @@
             <field name="conference">este</field>
             <field name="city">Oviedo</field>
           </record>
+          <record id="user1" model="res.partner">
+          <field name="name">User1</field>
+          <field name="nickname">User1</field>
+          <field name="team_selected" ref='equipos.team1'></field>
+          </record>
+          <record id="user2" model="res.partner">
+          <field name="name">User2</field>
+          <field name="nickname">User2</field>
+          <field name="team_selected" ref='equipos.team2'></field>
+          </record>
+          <record id="user3" model="res.partner">
+          <field name="name">User3</field>
+          <field name="nickname">User3</field>
+          <field name="team_selected" ref='equipos.team3'></field>
+          </record>
+          <record id="user4" model="res.partner">
+          <field name="name">User4</field>
+          <field name="nickname">User4</field>
+          <field name="team_selected" ref='equipos.team4'></field>
+          </record>
+          <record id="user5" model="res.partner">
+          <field name="name">User5</field>
+          <field name="nickname">User5</field>
+          <field name="team_selected" ref='equipos.team5'></field>
+          </record>
+          <record id="user6" model="res.partner">
+          <field name="name">User6</field>
+          <field name="nickname">User6</field>
+          <field name="team_selected" ref='equipos.team6'></field>
+          </record>
+          <record id="user7" model="res.partner">
+          <field name="name">User7</field>
+          <field name="nickname">User7</field>
+          <field name="team_selected" ref='equipos.team7'></field>
+          </record>
+          <record id="user8" model="res.partner">
+          <field name="name">User8</field>
+          <field name="nickname">User8</field>
+          <field name="team_selected" ref='equipos.team8'></field>
+          </record>
+          <record id="user9" model="res.partner">
+          <field name="name">User9</field>
+          <field name="nickname">User9</field>
+          <field name="team_selected" ref='equipos.team9'></field>
+          </record>
+          <record id="user10" model="res.partner">
+          <field name="name">User10</field>
+          <field name="nickname">User10</field>
+          <field name="team_selected" ref='equipos.team10'></field>
+          </record>
+          <record id="user11" model="res.partner">
+          <field name="name">User11</field>
+          <field name="nickname">User11</field>
+          <field name="team_selected" ref='equipos.team11'></field>
+          </record>
+          <record id="user12" model="res.partner">
+          <field name="name">User12</field>
+          <field name="nickname">User12</field>
+          <field name="team_selected" ref='equipos.team12'></field>
+          </record>
+          <record id="user13" model="res.partner">
+          <field name="name">User13</field>
+          <field name="nickname">User13</field>
+          <field name="team_selected" ref='equipos.team13'></field>
+          </record>
+          <record id="user14" model="res.partner">
+          <field name="name">User14</field>
+          <field name="nickname">User14</field>
+          <field name="team_selected" ref='equipos.team14'></field>
+          </record>
+          <record id="user15" model="res.partner">
+          <field name="name">User15</field>
+          <field name="nickname">User15</field>
+          <field name="team_selected" ref='equipos.team15'></field>
+          </record>
     </data>
 </odoo>

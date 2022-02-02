@@ -27,6 +27,8 @@
         'security/ir.model.access.csv',
         'views/views.xml',
         'data/cronseason.xml',
+        'data/cronlevel.xml',
+        'data/cronbudget.xml',
         'views/templates.xml',
     ],
     # only loaded in demonstration mode

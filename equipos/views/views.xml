@@ -16,6 +16,18 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.users_list">
+      <field name="name">Usuarios</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nickname"/>
+          <field name="team_selected"/>
+          <field name="player_level"/>
+        </tree>
+      </field>
+    </record>
+
     <record model="ir.ui.view" id="equipos.search">
       <field name="name">Equipos buscar</field>
       <field name="model">equipos.equipos</field>
@@ -29,6 +41,20 @@
           <filter name="este" string="Conferencia Este" domain="[('conference','=','este')]"></filter>
           <filter name="oeste" string="Conferencia Oeste" domain="[('conference','=','oeste')]"></filter>
           <filter name="group_by_ligue" string="Group by ligue" context="{'group_by': 'ligue'}"></filter>
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.search">
+      <field name="name">Usuarios buscar</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="nickname"/>
+          <field name="team_selected"/>
+          <field name="player_level" string="Level" filter_domain="[('player_level','>=',self)]"/>
+          <filter name="user_partner" string="Es Usuario" domain="[('isuser','=',True)]" />
+          <filter name="user_premium" string="Es Premium" domain="[('ispremium','=',True)]" />
         </search>
       </field>
     </record>
@@ -87,6 +113,13 @@
               </page>
               <page string="Capitán">
                 <field name="captain"/>
+              </page>
+              <page string="Dueño">
+                <field name="owner" class="oe_read_only" attrs="{'invisible': [('owner','=', '')]}">
+                  <tree>
+                    <field name="nickname" class="oe_read_only"/>
+                  </tree>
+                </field> 
               </page>
             </notebook>
           </sheet>
@@ -282,6 +315,51 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.users_form">
+      <field name="name">Usuarios</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <separator string="Información"></separator>
+            <group>
+              <field name="name" class="oe_edit_only"/>
+              <field name="nickname"/>
+              <field name="team_selected"/>
+            </group>
+            <group>
+              <field name="player_level"/>
+              <field name="isuser"/>
+              <field name="ispremium"/>
+            </group>
+            <notebook>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="equipos.users_partner_form">
+      <field name="name">Usuarios premium</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="equipos.users_form"/>
+      <field name="arch" type="xml">
+        <separator position="before">
+          <field name="premium_logo" widget="image" class="oe_read_only" attrs="{'invisible':[('ispremium', '!=', True)]}"/>
+        </separator>
+        <notebook position="inside">
+          <page string="Premium" attrs="{'invisible':[('ispremium', '!=', True)]}" class="oe_read_only">
+            <group class="oe_read_only">
+              <field name="boost_budget"/>
+              <field name="boost_level"/>
+              <field name="premium_players"/>
+            </group>
+          </page>
+        </notebook>
+      </field>
+    </record>
+
+
     <record model="ir.ui.view" id="equipos.jugadores_list">
       <field name="name">Jugadores</field>
       <field name="model">equipos.jugadores</field>
@@ -439,6 +517,24 @@
       <field name="view_mode">tree,form</field>
     </record>
 
+    <record model="ir.actions.act_window" id="equipos.action_users_window">
+      <field name="name">Usuarios</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain"></field>
+      <field name="context">{'default_isuser': True, 'search_default_user_partner': 1}</field>
+      <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('equipos.users_list')}), (0, 0, {'view_mode': 'form', 'view_id': ref('equipos.users_form')}),]" />  
+    </record>
+
+    <record model="ir.actions.act_window" id="equipos.action_users_premium_window">
+      <field name="name">Usuarios premium</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain"></field>
+      <field name="context">{'default_isuser': True, 'search_default_user_premium': 1,'default_ispremium': True}</field>
+      <field name="view_ids" eval="[(5, 0, 0), (0, 0, {'view_mode': 'tree', 'view_id': ref('equipos.users_list')}), (0, 0, {'view_mode': 'form', 'view_id': ref('equipos.users_partner_form')}),]" />  
+    </record>
+
     <!-- server action to the one above -->
 <!--
     <record model="ir.actions.server" id="equipos.action_server">
@@ -472,5 +568,9 @@
               action="equipos.action_partidos_window"/>
       <menuitem name="Cuerpo técnico" id="equipos.menu_coaching_list" parent="equipos.menu_1"
               action="equipos.action_coaching_window"/>
+      <menuitem name="Usuarios" id="equipos.menu_users_list" parent="equipos.menu_1"
+              action="equipos.action_users_window"/>
+      <menuitem name="Usuarios premium" id="equipos.menu_users_premium_list" parent="equipos.menu_1"
+              action="equipos.action_users_premium_window"/>
   </data>
 </odoo>

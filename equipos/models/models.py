@@ -35,6 +35,7 @@ class equipos(models.Model):
     ligue = fields.Many2one('equipos.liga', ondelete='set null', help='Liga en la que juega')
     season = fields.Many2many('equipos.temporada',related='ligue.season')
     players = fields.One2many(string='Jugadores',comodel_name='equipos.jugadores',inverse_name='team')
+    owner = fields.One2many(string='Dueño',comodel_name='res.partner',inverse_name='team_selected',readonly=True)
     captain = fields.Many2one('equipos.jugadores',compute='_get_captain')
     victories = fields.Integer(string='Victorias',default=0,readonly=True)
     loses = fields.Integer(string='Derrotas',default=0,readonly=True)
@@ -53,6 +54,20 @@ class equipos(models.Model):
                 team.captain = team.players[0].id
             else:
                 team.captain = 0
+
+    @api.model
+    def cron_do_level(self):
+        users = self.env['res.partner'].search([])
+        for s in users:
+            if s.ispremium:
+                s.player_level+=1
+
+    @api.model
+    def cron_do_budget(self):
+        users = self.env['res.partner'].search([])
+        for s in users:
+            if s.ispremium:
+                s.team_selected.budget+=200
 
     @api.onchange('ligue')
     def _reset_ligue(self):
@@ -137,6 +152,7 @@ class liga(models.Model):
                     t.victories = 0
                     t.loses = 0
                     t.draws = 0
+                    t.owner.player_level +=1
                 for i in p.calendar:
                     self.write({'calendar' : [(2,i.id,0)]})
             else:
@@ -219,7 +235,7 @@ class jugadores(models.Model):
     _description = 'Jugadores'
 
     def _get_default_image(self):
-        with open(modules.get_module_resource('equipos', 'static/src/img', 'teams.jpg'), 'rb') as f:
+        with open(modules.get_module_resource('equipos', 'static/src/img', 'player_silhouette.jpg'), 'rb') as f:
             img = f.read()
             return base64.b64encode(img)
 
@@ -247,6 +263,7 @@ class jugadores(models.Model):
     @api.constrains('team','pricepool','free')
     def _check_money(self):
         for s in self:
+            print("team2 current_money - pricepool: " + str(s.team.current_money - s.pricepool))
             if s.free == 'si' and (s.team.current_money - s.pricepool) > 0:
                 print(s.team.budget - s.pricepool)
             else:    
@@ -281,11 +298,23 @@ class partidos(models.Model):
         for i in self:
             if i.team1_points > i.team2_points:
                 i.winner = i.team1.name
+                i.team1.owner.player_level +=1
+                if i.team1.owner.player_level > 1 and i.team1.owner.ispremium == True:
+                    i.team1.captain.free = 'si'
+                    i.team1.captain.pricepool = 0
+                    print("team1")
+
                 i.team1.victories +=1
                 i.team2.loses +=1
                 i.ligue.matches +=1
             elif i.team2_points > i.team1_points:
                 i.winner = i.team2.name
+                i.team2.owner.player_level +=1
+                if i.team2.owner.player_level > 1 and i.team2.owner.ispremium == True:
+                    i.team2.captain.free = 'si'
+                    i.team2.captain.pricepool = 0
+                    print("team1")
+
                 i.team2.victories +=1
                 i.team1.loses +=1
                 i.ligue.matches +=1
@@ -339,14 +368,38 @@ class coaching(models.Model):
     advance_scout = fields.Char(string='Advance scout')
     team = fields.One2many(string='Equipo',comodel_name='equipos.equipos',inverse_name='coaching_staff')
 
-    # def _default_team(self):
-    #         return self._context.get('name')
-    # pick_team = fields.Many2one('equipos.equipos',readonly=True, default=_default_team)
+class users(models.Model):
+    _name = 'res.partner'
+    _inherit = 'res.partner'
 
-    # @api.constrains('team')
-    # def _check_team(self):
-    #     for s in self:
-    #         if s.team.coaching_staff:
-    #             raise ValidationError(s.team.name + ' ya tiene coaching staff ') 
-    #         else:    
-    #             print('Movimiento correcto')
+    nickname = fields.Char(string='Nickname')
+    team_selected = fields.Many2one('equipos.equipos', string='Mi equipo')
+    player_level = fields.Integer(string='Nivel de experiencia', default=0,readonly=True)
+    isuser = fields.Boolean(string="Usuario",default=True)
+    ispremium = fields.Boolean(string="Usuario premium",default=False)
+
+    @api.onchange('team_selected')
+    def _check_team(self):
+        teams = self.env['res.partner'].search([])
+        all_teams = teams.team_selected[:-1]
+        for p in all_teams:
+            for s in self:
+                if str(s.team_selected) == str(p):
+                    raise ValidationError(s.team_selected.name + ' ya tiene dueño.') 
+                else:    
+                    print('Movimiento correcto')
+
+class userspremium(models.Model):
+    _name = 'res.partner'
+    _inherit = 'res.partner'
+
+    def _get_default_image(self):
+        with open(modules.get_module_resource('equipos', 'static/src/img', 'premium_logo.png'), 'rb') as f:
+            img = f.read()
+            return base64.b64encode(img)
+
+    premium_logo = fields.Image(default=_get_default_image, max_width=300, max_height=300)
+    boost_budget = fields.Char(string='Boost de budget',default='Se añadirán 200 créditos al budget del equipo diariamente.',readonly=True)
+    boost_level = fields.Char(string='Boost de nivel: ',default='Se subirá 1 nivel a la cuenta semanalmente.',readonly=True)
+    premium_players = fields.Char(string='Jugador gratuito: ',default='Cuando la cuenta alcanze el nivel 10 el capitán del equipo pasará a ser gratuito.',readonly=True)
+    premium_logo = fields.Image(default=_get_default_image, max_width=100, max_height=100)
