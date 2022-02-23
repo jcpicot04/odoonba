@@ -1,21 +1,20 @@
 # -*- coding: utf-8 -*-
-# from odoo import http
+from odoo import http
 
 
-# class Equipos(http.Controller):
-#     @http.route('/equipos/equipos/', auth='public')
-#     def index(self, **kw):
-#         return "Hello, world"
+class MyController(http.Controller):
+   @http.route('/equipos/partido/', auth='user', type='json')
+   def partido(self):
+       return {
+           'html': """
+               <div id="equipos_banner">
+                    <link href="/equipos/static/src/css/banner.css"
+                       rel="stylesheet">
+                   <h1>Partidos</h1>
+                   <p>Creación de partidos:</p>
+                   <a class="partido_button" type="action" data-reload-on-close="true" role="button" data-method="action_partido_wizard" data-model="equipos.partidos_wizard">
+                   Crear partido
+               </a>
+               </div> """
+       }
 
-#     @http.route('/equipos/equipos/objects/', auth='public')
-#     def list(self, **kw):
-#         return http.request.render('equipos.listing', {
-#             'root': '/equipos/equipos',
-#             'objects': http.request.env['equipos.equipos'].search([]),
-#         })
-
-#     @http.route('/equipos/equipos/objects/<model("equipos.equipos"):obj>/', auth='public')
-#     def object(self, obj, **kw):
-#         return http.request.render('equipos.object', {
-#             'object': obj
-#         })

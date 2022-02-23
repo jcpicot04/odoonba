@@ -1,7 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_equipos_equipos,equipos.equipos,model_equipos_equipos,base.group_user,1,1,1,1
+access_equipos_equipos_aux,equipos.equipos_aux,model_equipos_equipos_aux,base.group_user,1,1,1,1
 access_equipos_liga,equipos.liga,model_equipos_liga,base.group_user,1,1,1,1
+access_equipos_liga_aux,equipos.liga_aux,model_equipos_liga_aux,base.group_user,1,1,1,1
 access_equipos_temporada,equipos.temporada,model_equipos_temporada,base.group_user,1,1,1,1
 access_equipos_jugadores,equipos.jugadores,model_equipos_jugadores,base.group_user,1,1,1,1
 access_equipos_partidos,equipos.partidos,model_equipos_partidos,base.group_user,1,1,1,1
+access_equipos_partidos_wizard,equipos.partidos_wizard,model_equipos_partidos_wizard,base.group_user,1,1,1,1
+access_equipos_jugador_wizard,equipos.jugador_wizard,model_equipos_jugador_wizard,base.group_user,1,1,1,1
 access_equipos_coaching,equipos.coaching,model_equipos_coaching,base.group_user,1,1,1,1

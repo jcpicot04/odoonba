@@ -16,6 +16,21 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.partidos_list">
+      <field name="name">Partidos</field>
+      <field name="model">equipos.partidos</field>
+      <field name="arch" type="xml">
+        <tree banner_route="/equipos/partido">
+          <field name="name"/>
+          <field name="date"/>
+          <field name="ligue"/>
+          <field name="team1"/>
+          <field name="team2"/>
+          <field name="winner"/>
+        </tree>
+      </field>
+    </record>
+
     <record model="ir.ui.view" id="equipos.users_list">
       <field name="name">Usuarios</field>
       <field name="model">res.partner</field>
@@ -59,6 +74,37 @@
       </field>
     </record>
 
+    <record model="ir.ui.view" id="equipos.jugador_wizard_form">
+    	<field name="name">jugador wizard form</field>
+    	<field name="model">equipos.jugador_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<sheet>
+                <group>
+                  <field name="logo"/>
+                  <field name="name"/>
+                  <field name="position"/>
+                  <field name="nationality"/>
+                </group>
+                <footer>
+                    <button name="create_jugador" type="object"
+                            string="Crear" class="oe_highlight"/>
+                    <button special="cancel" string="Cancelar"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+  	<record id="equipos.action_jugador_wizard" model="ir.actions.act_window">
+    	<field name="name">Lanzar jugador wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">equipos.jugador_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="equipos.jugador_wizard_form"/>
+    	<field name="target">new</field>
+	  </record>
+
     <record model="ir.ui.view" id="equipos.form">
       <field name="name">Equipos</field>
       <field name="model">equipos.equipos</field>
@@ -76,6 +122,10 @@
               <span class="o_stat_text">Budget</span>
             </div>
             </button>
+          </div>
+          <div>
+            <button type="action" name="%(equipos.action_jugador_wizard)d" string="Crear jugador" context="{'equipo_id':active_id}"></button>
+            <separator></separator>
           </div>
             <field name="logo" widget="image"/>
             <separator string="Información"></separator>
@@ -440,6 +490,86 @@
         </kanban>
       </field>  
     </record>
+
+    <record model="ir.ui.view" id="equipos.partidos_wizard_form">
+    	<field name="name">partidos wizard form</field>
+    	<field name="model">equipos.partidos_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<header>
+                	<button name="previous" type="object"
+                        	string="Previous" class="btn btn-secondary" states="2,3,4"/>
+                	<button name="next" type="object"
+                        	string="Next" class="btn oe_highlight" states="1,2,3"/>
+                	<field name="state" widget="statusbar"/>
+            	</header>
+            	<sheet>
+                	<group states="1,2,3,4">
+                    	<field name="date"  attrs="{'readonly':[('state','!=','1')]}"/>
+                	</group>
+                	<group states="3,4">
+                    	<field name="ligue"  attrs="{'readonly':[('state','!=','1')]}" style="pointer-events:none;"/>
+                	</group>
+                	<group col="5" string="Ligue" states="2">
+                    	<field name="l_name"/>
+                      <button name="add_ligue" type="object"
+                            	string="Añadir liga" class="oe_highlight"></button>
+                	</group>
+                	<group states="2">
+                    	<field name="ligue">
+                        	<tree editable="bottom">
+                            	<field name="name"/>
+                        	</tree>
+                    	</field>
+                	</group>
+                	<group col="3" string="Teams" states="3">
+                    <group>
+                      <p>Local</p>
+                    	<field name="t1_name"/>
+                    	<field name="t1_conference"/>
+                    	<field name="t1_city"/>
+                    </group>
+                    <group>
+                      <p>Visitante</p>
+                    	<field name="t2_name"/>
+                    	<field name="t2_conference"/>
+                    	<field name="t2_city"/>
+                    </group>
+                    	<button name="add_team" type="object"
+                            	string="Añadir ambos equipos" class="oe_highlight"></button>
+                    	<button name="add_local" type="object"
+                            	string="Añadir local" class="oe_highlight"></button>
+                    	<button name="add_visitante" type="object"
+                            	string="Añadir visitante" class="oe_highlight"></button>
+                	</group>
+                	<group states="3">
+                    	<field name="team1" />
+                    	<field name="team2" />
+                	</group>
+                	<group states="4" string="Equipos" style="pointer-events:none;">
+                    	<field name="team1"/>
+                    	<field name="team2"/>
+                	</group>
+                <!--	<button name="commit" type="object"
+                        	string="Commit" class="oe_highlight" states="4"/>-->
+                	<footer>
+                    	<button name="create_partido" type="object"
+                            	string="Crear" class="oe_highlight" states="4"/>
+                    	<button special="cancel" string="Cancelar"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+  	<record id="equipos.action_partido_wizard" model="ir.actions.act_window">
+    	<field name="name">Lanzar partidos wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">equipos.partidos_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="equipos.partidos_wizard_form" />
+    	<field name="target">new</field>
+	  </record>
 
     <record model="ir.ui.view" id="equipos.partidos_calendar">
       <field name="name">Partidos calendar</field>
