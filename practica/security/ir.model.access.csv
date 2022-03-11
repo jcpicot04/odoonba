@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_practica_colegio,practica.colegio,model_practica_colegio,base.group_user,1,1,1,1
+access_practica_clase,practica.clase,model_practica_clase,base.group_user,1,1,1,1
+access_practica_profesor,practica.profesor,model_practica_profesor,base.group_user,1,1,1,1
+access_practica_alumno_wizard,practica.alumno_wizard,model_practica_alumno_wizard,base.group_user,1,1,1,1
+access_practica_colegio_wizard,practica.colegio_wizard,model_practica_colegio_wizard,base.group_user,1,1,1,1

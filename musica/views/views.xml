@@ -1,0 +1,74 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="musica.canso_list">
+      <field name="name">canso list</field>
+      <field name="model">musica.canso</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="musica.canso_wizard_form">
+    	<field name="name">canço wizard form</field>
+    	<field name="model">musica.canso_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<sheet>
+                <group>
+                  <field name="cansons"/>
+                </group>
+                <footer>
+                    <button name="create_canso" type="object"
+                            string="Crear" class="oe_highlight"/>
+                    <button special="cancel" string="Cancelar"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+  	<record id="musica.action_canso_wizard" model="ir.actions.act_window">
+    	<field name="name">Lanzar canço wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">musica.canso_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="musica.canso_wizard_form"/>
+    	<field name="target">new</field>
+	  </record>
+
+
+    <record id="view_res_partner_form_inherit" model="ir.ui.view">
+        <field name="name">Music custom fields</field>
+        <field name="model">res.partner</field>
+        <field name="type">form</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+          <notebook position="inside">
+            <page string="Cançons">
+              <group>
+                <field name="cansons"/>
+                <button type="action" name="%(musica.action_canso_wizard)d" string="Afegir cançons favorites" context="{'user_id':active_id}"></button>
+              </group>
+            </page>
+        </notebook>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="musica.action_canso_window">
+      <field name="name">Canso</field>
+      <field name="res_model">musica.canso</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Discografia" id="musica.menu_root"/>
+
+    <menuitem name="Musica" id="musica.menu_1" parent="musica.menu_root"/>
+
+    <menuitem name="Cansons" id="musica_canso" parent="musica.menu_1"
+              action="musica.action_canso_window"/>
+
+  </data>
+</odoo>

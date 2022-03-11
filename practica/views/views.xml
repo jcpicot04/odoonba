@@ -1,0 +1,343 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="practica.colegio_list">
+      <field name="name">colegio list</field>
+      <field name="model">practica.colegio</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="clases"/>
+          <field name="alumnos"/>
+          <field name="profesores"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="practica.clase_list">
+      <field name="name">clase list</field>
+      <field name="model">practica.clase</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="colegio"/>
+          <field name="alumnos"/>
+          <field name="profesores"/>
+        </tree>
+      </field>
+    </record>
+
+    
+    <record model="ir.ui.view" id="practica.alumno_list">
+      <field name="name">alumno list</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="colegio"/>
+          <field name="clase"/>
+          <field name="dias_cursados"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="practica.profesor_list">
+      <field name="name">profesor list</field>
+      <field name="model">practica.profesor</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="colegio"/>
+          <field name="clases"/>
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="practica.alumno_form">
+      <field name="name">Alumno</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <form>
+        <header>
+          <button name="mostrar_mas_dias" class="oe_stat_button" type="object" icon="fa-pencil" string="Alumno más longevo"/>
+        </header>
+          <sheet>
+            <separator string="Información"></separator>
+            <group>
+              <field name="name"/>
+              <field name="is_alumno"/>
+              <field name="clase" attrs="{'invisible':[('is_alumno', '!=', True)]}"/>
+            </group>
+            <notebook position="inside">
+              <page string="Movidas" attrs="{'invisible':[('is_alumno', '!=', True)]}" class="oe_read_only">
+                <group class="oe_read_only">
+                  <field name="dias_cursados"/>
+                  <field name="profesores"/>
+                  <field name="colegio"/>
+                </group>
+              </page>
+            </notebook>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="practica.colegio_wizard_form">
+    	<field name="name">colegio wizard form</field>
+    	<field name="model">practica.colegio_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<header>
+                	<button name="previous" type="object"
+                        	string="Previous" class="btn btn-secondary" states="2,3,4"/>
+                	<button name="next" type="object"
+                        	string="Next" class="btn oe_highlight" states="1,2,3"/>
+                	<field name="state" widget="statusbar"/>
+            	</header>
+            	<sheet>
+                	<group states="1,4">
+                    	<field name="clase_name" attrs="{'readonly':[('state','!=','1')]}"/>
+                	</group>
+                	<group states="2,4">
+                    	<field name="profesor_name" attrs="{'readonly':[('state','!=','2')]}"/>
+                	</group>
+                	<group states="3,4">
+                    	<field name="alumno_name" attrs="{'readonly':[('state','!=','3')]}"/>
+                    </group>
+                <!--	<button name="commit" type="object"
+                        	string="Commit" class="oe_highlight" states="4"/>-->
+                	<footer>
+                    	<button name="create_todo" type="object"
+                            	string="Crear" class="oe_highlight" states="4"/>
+                    	<button special="cancel" string="Cancelar"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+  	<record id="practica.action_colegio_wizard" model="ir.actions.act_window">
+    	<field name="name">Lanzar colegio wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">practica.colegio_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="practica.colegio_wizard_form"/>
+    	<field name="target">new</field>
+	  </record>
+
+    <record model="ir.ui.view" id="practica.clase_form">
+    	<field name="name">clase form</field>
+    	<field name="model">practica.clase</field>
+    	<field name="arch" type="xml">
+        	<form>
+              <header>
+            <button type="action" name="%(practica.action_alumno_wizard)d" string="Crear alumno" context="{'clase_id':active_id}"></button>
+              </header>
+            	<sheet>
+                <group>
+                  <field name="name"/>
+                  <field name="colegio"/>
+                  <field name="alumnos"/>
+                  <field name="profesores"/>
+                </group>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+    <record model="ir.ui.view" id="practica.colegio_form">
+    	<field name="name">colegio form</field>
+    	<field name="model">practica.colegio</field>
+    	<field name="arch" type="xml">
+        	<form>
+              <header>
+            <button type="action" name="%(practica.action_colegio_wizard)d" string="Crear clase,alumno y profesor" context="{'colegio_id':active_id}"></button>
+              </header>
+            	<sheet>
+                <group>
+                  <field name="name"/>
+                  <field name="clases"/>
+                  <field name="alumnos"/>
+                  <field name="profesores"/>
+                </group>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+  
+    <record model="ir.ui.view" id="practica.alumno_wizard_form">
+    	<field name="name">alumno wizard form</field>
+    	<field name="model">practica.alumno_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<sheet>
+                <group>
+                  <field name="name"/>
+                </group>
+                <footer>
+                    <button name="create_alumno" type="object"
+                            string="Crear" class="oe_highlight"/>
+                    <button special="cancel" string="Cancelar"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	  </record>
+
+  	<record id="practica.action_alumno_wizard" model="ir.actions.act_window">
+    	<field name="name">Lanzar alumno wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">practica.alumno_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="practica.alumno_wizard_form"/>
+    	<field name="target">new</field>
+	  </record>
+
+    <record model="ir.ui.view" id="practica.alumno_search">
+      <field name="name">Alumnos Search</field>
+      <field name="model">res.partner</field>
+      <field name="arch" type="xml">
+        <search>
+            <field name="name" />
+            <filter name="is_alumno_filter" string="Es alumno" domain="[('is_alumno','=',True)]" />
+        </search>
+      </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="practica.action_colegio_window">
+      <field name="name">Colegio</field>
+      <field name="res_model">practica.colegio</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.act_window" id="practica.action_clase_window">
+      <field name="name">Clase</field>
+      <field name="res_model">practica.clase</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+  
+    <record model="ir.actions.act_window" id="practica.action_alumno_window">
+      <field name="name">Alumno</field>
+      <field name="res_model">res.partner</field>
+      <field name="view_mode">tree,form</field>
+      <field name="context">{'search_default_is_alumno_filter':1,'default_is_alumno':True}</field>
+      <field name="view_ids" eval="[
+      (5, 0, 0),
+      (0, 0, {'view_mode': 'tree', 'view_id': ref('practica.alumno_list')}),
+      (0, 0, {'view_mode': 'form', 'view_id': ref('practica.alumno_form')})
+      ]" />
+    </record>
+
+    <record model="ir.actions.act_window" id="practica.action_profesor_window">
+      <field name="name">Profesor</field>
+      <field name="res_model">practica.profesor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <record model="ir.actions.server" id="practica.action_reset_dias">
+      <field name="name">Reset Dias</field>
+      <field name="model_id" ref="model_res_partner"/>
+      <field name="binding_model_id" ref="model_res_partner"></field>
+      <field name="state">code</field>
+      <field name="code">model.reset_dias(records)</field>
+    </record>
+
+    <menuitem name="Colegio" id="practica.menu_root"/>
+
+    <menuitem name="Practica" id="practica.menu_1" parent="practica.menu_root"/>
+
+
+    <menuitem name="Colegio" id="practica_colegio" parent="practica.menu_1"
+              action="practica.action_colegio_window"/>
+    <menuitem name="Clase" id="practica_clase" parent="practica.menu_1"
+              action="practica.action_clase_window"/>
+    <menuitem name="Alumno" id="practica_alumno" parent="practica.menu_1"
+              action="practica.action_alumno_window"/>
+    <menuitem name="Profesor" id="practica_profesor" parent="practica.menu_1"
+              action="practica.action_profesor_window"/>
+
+  </data>
+</odoo>
+
+<!-- <record model="ir.ui.view" id="school.course_wizard_form">
+    	<field name="name">course wizard form</field>
+    	<field name="model">school.course_wizard</field>
+    	<field name="arch" type="xml">
+        	<form>
+            	<header>
+                	<button name="previous" type="object"
+                        	string="Previous" class="btn btn-secondary" states="2,3,4"/>
+                	<button name="next" type="object"
+                        	string="Next" class="btn oe_highlight" states="1,2,3"/>
+                	<field name="state" widget="statusbar"/>
+            	</header>
+            	<sheet>
+
+                	<group states="1,2,3,4">
+                    	<field name="name"  attrs="{'readonly':[('state','!=','1')]}"/>
+                	</group>
+                	<group col="5" string="Classrooms" states="2">
+                    	<field name="c_name"/>
+                    	<field name="c_level"/>
+                    	<button name="add_classroom" type="object"
+                            	string="Add Classroom" class="oe_highlight"></button>
+                	</group>
+                	<group states="2">
+                    	<field name="classrooms">
+                        	<tree editable="bottom">
+                            	<field name="name"/>
+                            	<field name="level"/>
+                        	</tree>
+                    	</field>
+                	</group>
+                	<group col="7" string="Students" states="3">
+                    	<field name="s_name"/>
+                    	<field name="s_birth_year"/>
+                    	<field name="s_dni"/>
+                    	<button name="add_student" type="object"
+                            	string="Add Student" class="oe_highlight"></button>
+                	</group>
+                	<group states="3">
+                    	<field name="students" />
+                	</group>
+                	<group states="4" string="All Students">
+                    	<field name="students" >
+                        	<tree editable="bottom">
+                            	<field name="name"/>
+                            	<field name="birth_year"/>
+                            	<field name="dni"/>
+                            	<field name="classroom"/>
+                        	</tree>
+                    	</field>
+                	</group>
+
+                	<group states="4" string="Classrooms">
+                    	<field name="classrooms" >
+                        	<tree editable="bottom">
+                            	<field name="name"/>
+                            	<field name="students" widget="many2many_tags"/>
+                        	</tree>
+                    	</field>
+                	</group>
+                	<button name="commit" type="object"
+                        	string="Commit" class="oe_highlight" states="4"/>
+                	<footer>
+                    	<button name="create_course" type="object"
+                            	string="Create" class="oe_highlight" states="4"/>
+                    	<button special="cancel" string="Cancel"/>
+                	</footer>
+            	</sheet>
+        	</form>
+    	</field>
+	</record>
+
+
+
+	<record id="school.action_course_wizard" model="ir.actions.act_window">
+    	<field name="name">Launch course wizard</field>
+    	<field name="type">ir.actions.act_window</field>
+    	<field name="res_model">school.course_wizard</field>
+    	<field name="view_mode">form</field>
+    	<field name="view_id" ref="school.course_wizard_form" />
+    	<field name="target">new</field>
+	</record> -->
